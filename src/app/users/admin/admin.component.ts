@@ -146,6 +146,7 @@ export class AdminComponent implements OnInit {
     )
   }
 
+
   public uploadImage(imageInput: any) {
     this.fileUploadService.onUpload(imageInput.target.files[0]).subscribe({
       next: async (response: string) => {
@@ -299,6 +300,11 @@ export class AdminComponent implements OnInit {
       }
     )
   }
+  //route to create bundle form
+  navigateToBundle(){
+    this.router.navigate(["bundle"])
+  }
+  
   //For adding Discount Products
   addDiscountProducts() {
     this.newDiscount.discountPercentage = this.formValueDiscount.value.discount_percentage;

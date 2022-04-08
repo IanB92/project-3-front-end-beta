@@ -34,6 +34,15 @@ export class ProductAndDiscount {
     discountDescription: string = "";
     discountPercentage: number = 0;
 }
+export class BundleProduct {
+
+
+    bundelId: number = 0;
+    bundleName: String = "";
+	bundlePercentage: number = 0.0; 
+	 productOnePojo: Product = new Product();
+	 productTwoPojo: Product = new Product();
+}
 
 //Discount Model
 export class Discount{
