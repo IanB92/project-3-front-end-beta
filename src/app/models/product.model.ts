@@ -10,7 +10,15 @@ export class Product {
     imageUrl: string = "";
     productRemoved: boolean = false;
 }
+export class BundleProduct {
 
+
+    bundelId: number = 0;
+    bundleName: String = "";
+	bundlePercentage: number = 0.0; 
+	 productOnePojo: Product = new Product();
+	 productTwoPojo: Product = new Product();
+}
 export class ProductAndDiscount {
 
     productId: number = 0;
